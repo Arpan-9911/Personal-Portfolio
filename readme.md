@@ -19,16 +19,16 @@ I am a passionate web developer with a keen interest in creating dynamic and use
 This project is designed to help manage college attendance efficiently. It provides features for students and teachers to track attendance records seamlessly.
 
 ### 2. RSS Associates Business Website
-A professional website created for RSS Associates, showcasing their services and business information. I served as the Vice President of Techwhiz, leading the development team.
+A professional website created for RSS Associates, showcasing their services and business information.
 
 ### 3. Profile Card Slider
-An interactive profile card slider that allows users to view multiple profiles in a visually appealing manner. Developed as the Web Development Coordinator at Techwhiz.
+An interactive profile card slider that allows users to view multiple profiles in a visually appealing manner.
 
 ### 4. Personal Portfolio
-This very portfolio is a testament to my skills and experiences. It highlights my work and provides insight into my professional journey. Member of Techwhiz.
+This very portfolio is a testament to my skills and experiences. It highlights my work and provides insight into my professional journey.
 
 ### 5. DK Enterprises
-A business website for DK Enterprises, designed to enhance their online presence. Contributed as a member of Techwhiz, collaborating with fellow developers.
+A business website for DK Enterprises, designed to enhance their online presence.
 
 ## Technologies Used
 
