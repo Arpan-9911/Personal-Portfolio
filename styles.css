@@ -1,0 +1,264 @@
+.project-wrapper{
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.project-wrapper i{
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.project-wrapper i:first-child{
+  left: -15px;
+}
+.project-wrapper i:last-child{
+  right: -15px;
+}
+.project-wrapper .project-carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow: hidden;
+  scroll-snap-type: x proximity;
+  /* scroll-snap-type: x mandatory; */
+  scroll-behavior: smooth;
+}
+.project-carousel.no-transition{
+  scroll-behavior: auto;
+}
+.project-carousel .project-card{
+  scroll-snap-align: start;
+  list-style: none;
+  height: auto;
+  border-radius: 8px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.project-card .top{
+  background: #212529;
+  width: 100%;
+  height: 120px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.project-card .img{
+  width: 275px;
+  height: 125px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20px);
+}
+.project-card .img img{
+  width: 270px;
+  height: 120px;
+  object-fit: fill;
+  border-radius: 5px;
+}
+.project-card h2{
+  font-size: 20px;
+  margin: 20px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.project-card span{
+  font-size: 16px;
+  text-align: center;
+  margin: 0 25px;
+  color: #fff;
+}
+/* header animation */
+header div,
+a {
+  animation: header 0.5s 1;
+}
+
+/* Home-Section Image */
+.front-image {
+  width: 400px;
+  height: 400px;
+  animation: front-image 1.5s 1;
+}
+
+/* Hero Section Home Page Text */
+.front-text-home {
+  animation: front-text-home 2.5s 1;
+}
+
+/* Hero Section Text */
+.front-text {
+  animation: front-text 2.5s 1;
+}
+
+.front-text h1, .front-text-home h1 {
+  font-size: 70px;
+}
+
+/* Heading of each section */
+.heading {
+  font-size: 60px;
+}
+
+/* Footer Section */
+footer .f-heading {
+  font-size: 50px;
+  width: 50%;
+  margin: auto;
+}
+footer p {
+  width: 70%;
+  margin: auto;
+}
+
+/* Small Screen Close Button */
+.btn-close{
+  filter: invert(1);
+}
+
+/* Header Animation */
+@keyframes header {
+  0% {
+    opacity: 0;
+    ;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Home-Section Image Animation */
+@keyframes front-image {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Home-Section Text Animation */
+@keyframes front-text-home {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Hero Section Text Animation */
+  @keyframes front-text {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .front-text h1, .front-text-home h1 {
+    font-size: 50px;
+  }
+
+  .front-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  footer .f-heading {
+    font-size: 40px;
+    width: 70%;
+  }
+
+  footer p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-wrapper .project-carousel{
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project-wrapper i{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+  .front-text h1, .front-text-home h1 {
+    font-size: 30px;
+  }
+
+  .front-text-home h5 {
+    font-size: 16px;
+  }
+
+  .front-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  footer .f-heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-wrapper .project-carousel{
+    grid-auto-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .front-text h1, .front-text-home h1{
+    font-size: 20px;
+  }
+  .front-text-home h5 {
+    font-size: 12px;
+  }
+  .front-image {
+    width: 75px;
+    height: 75px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  footer .f-heading {
+    font-size: 20px;
+  }
+}

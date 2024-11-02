@@ -1,14 +1,160 @@
-<!-- Section 3 Start -->
-<section class="p-md-5 p-2 text-md-start text-center">
-  <!-- Heading -->
-  <h1 class="px-5 heading">How I Got Here</h1>
-  <!-- Description -->
-  <p class="mt-2 px-md-5 px-2">My journey in web development began with a curiosity for building intuitive digital experiences and a drive to solve real-world problems. Starting with small projects, I gradually expanded my expertise across front-end and back-end technologies, leading to a strong foundation in creating responsive, user-friendly websites. As a Computer Science student at Delhi University, I've delved into diverse frameworks and languages, blending technical knowledge with creativity to deliver reliable, impactful solutions. Today, my focus is on bringing client visions to life through seamless, well-optimized websites that elevate user engagement.</p>
-  <!-- Heading -->
-  <h1 class="px-5 mt-5 heading">Why Work With Me</h1>
-  <!-- Description -->
-  <p class="mt-2 px-md-5 px-2">I approach every project with a commitment to quality and a focus on crafting digital experiences that are visually engaging, responsive, and user-centered. My expertise spans front-end and back-end development, giving me a comprehensive understanding of what makes a website both beautiful and functional. Whether it's a business website, portfolio, or e-commerce platform, I tailor each project to reflect your goals, using best practices to ensure seamless performance across all devices.</p>
-  <!-- Description -->
-  <p class="px-5">Beyond technical skills, I value collaboration and clear communication, listening to your vision and translating it into a polished, high-impact digital solution. My drive to stay updated with the latest in web technologies means you’ll always receive innovative, forward-thinking solutions. Partnering with me means working with someone who cares about your success and is dedicated to delivering results that make a difference.</p>
-</section>
-<!-- Section 3 End -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <title>AK</title>
+</head>
+
+<body>
+  <!-- Large Screen Header Start -->
+  <header class="sticky-top bg-dark d-md-flex d-none align-items-center justify-content-between px-5">
+    <!-- Navigations Start -->
+    <div class="d-flex align-items-center p-5">
+      <a href="index.html" class="fs-6 text-light text-decoration-none text-muted">Home</a>
+      <a href="about.html" class="ms-3 fs-6 text-light text-decoration-none text-muted">About</a>
+      <a href="services.html" class="ms-3 fs-6 text-light text-decoration-none text-muted">Services</a>
+      <a href="projects.html" class="ms-3 fs-6 text-light text-decoration-none">Projects</a>
+      <a href="contact.html" class="ms-3 fs-6 text-light text-decoration-none text-muted">Contact</a>
+    </div>
+    <!-- Navigation End -->
+    <a href="contact.html" class="mx-4 btn btn-warning btn-lg px-5 fs-6">LET'S WORK TOGETHER</a>
+  </header>
+  <!-- Large Screen Header End -->
+
+  <!-- Small Screen Header Start -->
+  <header class="sticky-top d-md-none d-block p-2 bg-dark">
+    <!-- Trigger Button -->
+    <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </button>
+
+    <!-- Offcanvas Menu Start -->
+    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLeftLabel">
+      <div class="offcanvas-header text-light">
+        <h5 id="offcanvasLeftLabel">Portfolio</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-light">
+        <a href="index.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">Home</a>
+        <a href="about.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">About</a>
+        <a href="services.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">Services</a>
+        <a href="projects.html" class="d-block mb-3 fs-6 text-light text-decoration-none">Projects</a>
+        <a href="contact.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">Contact</a>
+      </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+  </header>
+  <!-- Small Screen Header End -->
+
+  <!-- Hero Section Start -->
+  <section class="bg-dark text-light p-md-5 p-2">
+    <div class="text-center front-text">
+      <h5 class="text-warning">Projects</h5>
+      <h1>A Glimpse into My Projects</h1>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Section 2 - Projects Start -->
+  <section class="p-md-5 p-3 bg-dark">
+    <div class="project-wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <ul class="project-carousel p-0 m-0">
+        <li class="project-card">
+          <div class="top">
+            <div class="img"><img src="images/pgdavAttendance.png" alt="Image1" draggable="false"></div>
+          </div>
+          <h2>College Attendance System</h2>
+          <span>A comprehensive solution for tracking student attendance efficiently, ensuring accurate records and easy access for both students and faculty.</span>
+        </li>
+        <li class="project-card">
+          <div class="top">
+            <div class="img"><img src="images/personalPortfolio.png" alt="Image4" draggable="false"></div>
+          </div>
+          <h2>Personal Portfolio</h2>
+          <span>A curated showcase of my skills, projects, and experiences, designed to highlight my journey as a web developer and provide insight into my professional capabilities.</span>
+        </li>
+        <li class="project-card">
+          <div class="top">
+            <div class="img"><img src="images/rssAssociates.png" alt="Image2" draggable="false"></div>
+          </div>
+          <h2>RSS Associates Business Website</h2>
+          <span>A dynamic and user-friendly platform designed to showcase business services, enhance client engagement, and streamline communication for effective collaboration.</span>
+        </li>
+        <li class="project-card">
+          <div class="top">
+            <div class="img"><img src="images/dkEnterprises.png" alt="Image5" draggable="false"></div>
+          </div>
+          <h2>DK Enterprises Website</h2>
+          <span>Contributed to the development of innovative solutions for business needs, collaborating with a team to enhance operational efficiency and customer engagement.</span>
+        </li>
+        <li class="project-card">
+          <div class="top">
+            <div class="img"><img src="images/imageSlider.png" alt="Image3" draggable="false"></div>
+          </div>
+          <h2>Profile Card Slider</h2>
+          <span>An innovative web application featuring a sleek and responsive slider to showcase team profiles, enhancing user experience through smooth navigation and engaging design.</span>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+  </section>
+  <!-- Section 2 - Projects End -->
+
+  <!-- Section 3 Start -->
+  <section class="p-md-5 pt-5 p-2 text-md-start text-center">
+    <!-- Heading -->
+    <h1 class="px-5 heading">How I Got Here</h1>
+    <!-- Description -->
+    <p class="mt-2 px-md-5 px-2">My journey in web development began with a curiosity for building intuitive digital
+      experiences and a drive to solve real-world problems. Starting with small projects, I gradually expanded my
+      expertise across front-end and back-end technologies, leading to a strong foundation in creating responsive,
+      user-friendly websites. As a Computer Science student at Delhi University, I've delved into diverse frameworks and
+      languages, blending technical knowledge with creativity to deliver reliable, impactful solutions. Today, my focus
+      is on bringing client visions to life through seamless, well-optimized websites that elevate user engagement.</p>
+    <!-- Heading -->
+    <h1 class="px-5 mt-5 heading">Why Work With Me</h1>
+    <!-- Description -->
+    <p class="mt-2 px-md-5 px-2">I approach every project with a commitment to quality and a focus on crafting digital
+      experiences that are visually engaging, responsive, and user-centered. My expertise spans front-end and back-end
+      development, giving me a comprehensive understanding of what makes a website both beautiful and functional.
+      Whether it's a business website, portfolio, or e-commerce platform, I tailor each project to reflect your goals,
+      using best practices to ensure seamless performance across all devices.</p>
+    <!-- Description -->
+    <p class="px-md-5 px-2">Beyond technical skills, I value collaboration and clear communication, listening to your
+      vision and translating it into a polished, high-impact digital solution. My drive to stay updated with the latest
+      in web technologies means you'll always receive innovative, forward-thinking solutions. Partnering with me means
+      working with someone who cares about your success and is dedicated to delivering results that make a difference.
+    </p>
+  </section>
+  <!-- Section 3 End -->
+
+  <!-- Footer Start -->
+  <footer class="bg-dark text-light p-md-5 p-2">
+    <div class="text-center p-md-5 py-5 p-2 lh-1 f-heading">Get started with a consultation today.</div>
+    <div class="px-md-5 px-2">
+      <p class="px-md-5 px-2 text-center">From website design to backend solutions, I create user-friendly,
+        visually engaging websites tailored to your needs. Let's start with a consultation and discuss how we can
+        achieve your goals together.</p>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <a href="contact.html" class="btn btn-warning btn-lg px-5 fs-6">LET'S WORK TOGETHER</a>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

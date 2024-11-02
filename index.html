@@ -9,156 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome CSS Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-  <!-- Titlt -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Title -->
   <title>AK</title>
-
-  <!-- Extra Styles of the Page Start -->
-  <style>
-    /* header animation */
-    header div,
-    a {
-      animation: header 0.5s 1;
-    }
-
-    /* Home-Section Image */
-    .front-image {
-      width: 400px;
-      height: 400px;
-      animation: front-image 1.5s 1;
-    }
-
-    /* Home Section Text */
-    .front-text {
-      animation: front-text 2.5s 1;
-    }
-
-    .front-text h1 {
-      font-size: 70px;
-    }
-
-    /* Heading of each section */
-    .heading {
-      font-size: 60px;
-    }
-
-    /* Footer Section */
-    footer .f-heading {
-      font-size: 50px;
-      width: 50%;
-      margin: auto;
-    }
-    footer p {
-      width: 70%;
-      margin: auto;
-    }
-
-    /* Small Screen Close Button */
-    .btn-close{
-      filter: invert(1);
-    }
-
-    /* Header Animation */
-    @keyframes header {
-      0% {
-        opacity: 0;
-        ;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    /* Home-Section Image Animation */
-    @keyframes front-image {
-      from {
-        opacity: 0;
-        transform: translateX(-100px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-    }
-
-    /* Home-Section Text Animation */
-    @keyframes front-text {
-      from {
-        opacity: 0;
-        transform: translateX(-100px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-    }
-
-    /* Media Queries */
-    @media screen and (max-width: 1200px) {
-      .front-text h1 {
-        font-size: 50px;
-      }
-
-      .front-image {
-        width: 200px;
-        height: 200px;
-      }
-
-      .heading {
-        font-size: 40px;
-      }
-
-      footer .f-heading {
-        font-size: 40px;
-        width: 70%;
-      }
-
-      footer p {
-        width: 90%;
-      }
-    }
-
-    @media screen and (max-width: 700px) {
-      .front-text h1 {
-        font-size: 30px;
-      }
-
-      .front-text h5 {
-        font-size: 16px;
-      }
-
-      .front-image {
-        width: 100px;
-        height: 100px;
-      }
-
-      .heading {
-        font-size: 30px;
-      }
-
-      footer .f-heading {
-        font-size: 30px;
-      }
-    }
-    @media screen and (max-width: 400px) {
-      .front-text h1{
-        font-size: 20px;
-      }
-      .front-text h5 {
-        font-size: 12px;
-      }
-      .front-image {
-        width: 75px;
-        height: 75px;
-      }
-      .heading {
-        font-size: 20px;
-      }
-      footer .f-heading {
-        font-size: 20px;
-      }
-    }
-  </style>
-  <!-- Extra Styles of the Page End -->
 </head>
 
 <body>
@@ -207,7 +61,7 @@
   <!-- Hero Section Start -->
   <section class="d-flex bg-dark text-light p-md-5 p-2 pt-5">
     <!-- Hero Section Text -->
-    <div class="col-md-7 px-md-5 px-2 front-text">
+    <div class="col-md-7 px-md-5 px-2 front-text-home">
       <h5>Hello, I'm Arpan</h5>
       <h1>I create websites for your business, portfolio and a lot more.</h1>
     </div>
@@ -227,9 +81,14 @@
       <a href="about.html" class="btn btn-lg btn-outline-light px-5 mt-5">More About Me</a>
       <!-- Icons -->
       <div class="d-flex mt-4 px-5 justify-content-md-start justify-content-center">
-        <i class="fa-brands fa-facebook mx-2 fs-3"></i>
-        <i class="fa-brands fa-twitter mx-2 fs-3"></i>
-        <i class="fa-brands fa-instagram mx-2 fs-3"></i>
+        <a href="https://www.linkedin.com/in/arpan-kumar-5a10492aa/" class="text-light" target="_blank"><i class="fa-brands fa-linkedin fs-3"></i></a>
+        <a href="https://github.com/Arpan-9911" class="text-light" target="_blank"><i class="fa-brands fa-github mx-4 fs-3"></i></a>
+        <a href="https://wa.me/919911081263" class="text-light" target="_blank"><i class="fa-brands fa-whatsapp fs-3"></i></a>
+      </div>
+      <div class="d-flex mt-2 px-5 justify-content-md-start justify-content-center">
+        <i class="fa-brands fa-facebook fs-3"></i>
+        <i class="fa-brands fa-square-twitter mx-4 fs-3"></i>
+        <i class="fa-brands fa-instagram fs-3"></i>
       </div>
     </div>
     <!-- About Section Description -->
