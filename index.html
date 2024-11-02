@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <!-- Titlt -->
+  <title>AK</title>
+
+  <!-- Extra Styles of the Page Start -->
+  <style>
+    /* header animation */
+    header div,
+    a {
+      animation: header 0.5s 1;
+    }
+
+    /* Home-Section Image */
+    .front-image {
+      width: 400px;
+      height: 400px;
+      animation: front-image 1.5s 1;
+    }
+
+    /* Home Section Text */
+    .front-text {
+      animation: front-text 2.5s 1;
+    }
+
+    .front-text h1 {
+      font-size: 70px;
+    }
+
+    /* Heading of each section */
+    .heading {
+      font-size: 60px;
+    }
+
+    /* Footer Section */
+    footer .f-heading {
+      font-size: 50px;
+      width: 50%;
+      margin: auto;
+    }
+    footer p {
+      width: 70%;
+      margin: auto;
+    }
+
+    /* Small Screen Close Button */
+    .btn-close{
+      filter: invert(1);
+    }
+
+    /* Header Animation */
+    @keyframes header {
+      0% {
+        opacity: 0;
+        ;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Home-Section Image Animation */
+    @keyframes front-image {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+
+    /* Home-Section Text Animation */
+    @keyframes front-text {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 1200px) {
+      .front-text h1 {
+        font-size: 50px;
+      }
+
+      .front-image {
+        width: 200px;
+        height: 200px;
+      }
+
+      .heading {
+        font-size: 40px;
+      }
+
+      footer .f-heading {
+        font-size: 40px;
+        width: 70%;
+      }
+
+      footer p {
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .front-text h1 {
+        font-size: 30px;
+      }
+
+      .front-text h5 {
+        font-size: 16px;
+      }
+
+      .front-image {
+        width: 100px;
+        height: 100px;
+      }
+
+      .heading {
+        font-size: 30px;
+      }
+
+      footer .f-heading {
+        font-size: 30px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .front-text h1{
+        font-size: 20px;
+      }
+      .front-text h5 {
+        font-size: 12px;
+      }
+      .front-image {
+        width: 75px;
+        height: 75px;
+      }
+      .heading {
+        font-size: 20px;
+      }
+      footer .f-heading {
+        font-size: 20px;
+      }
+    }
+  </style>
+  <!-- Extra Styles of the Page End -->
+</head>
+
+<body>
+  <!-- Large Screen Header Start -->
+  <header class="sticky-top bg-dark d-md-flex d-none align-items-center justify-content-between px-5">
+    <!-- Navigations Start -->
+    <div class="d-flex align-items-center p-5">
+      <a href="index.html" class="fs-6 text-light text-decoration-none">Home</a>
+      <a href="about.html" class="ms-3 fs-6 text-light text-decoration-none text-muted">About</a>
+      <a href="services.html" class="ms-3 fs-6 text-light text-decoration-none text-muted">Services</a>
+      <a href="projects.html" class="ms-3 fs-6 text-light text-decoration-none text-muted">Projects</a>
+      <a href="contact.html" class="ms-3 fs-6 text-light text-decoration-none text-muted">Contact</a>
+    </div>
+    <!-- Navigation End -->
+
+    <a href="contact.html" class="mx-4 btn btn-warning btn-lg px-5 fs-6">LET'S WORK TOGETHER</a>
+  </header>
+  <!-- Large Screen Header End -->
+
+  <!-- Small Screen Header Start -->
+  <header class="sticky-top d-md-none d-block p-2 bg-dark">
+    <!-- Trigger Button -->
+    <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </button>
+
+    <!-- Offcanvas Menu Start -->
+    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLeftLabel">
+      <div class="offcanvas-header text-light">
+        <h5 id="offcanvasLeftLabel">Portfolio</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-light">
+        <a href="index.html" class="d-block mb-3 fs-6 text-light text-decoration-none">Home</a>
+        <a href="about.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">About</a>
+        <a href="services.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">Services</a>
+        <a href="projects.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">Projects</a>
+        <a href="contact.html" class="d-block mb-3 fs-6 text-light text-decoration-none text-muted">Contact</a>
+      </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+  </header>
+  <!-- Small Screen Header End -->
+
+  <!-- Hero Section Start -->
+  <section class="d-flex bg-dark text-light p-md-5 p-2 pt-5">
+    <!-- Hero Section Text -->
+    <div class="col-md-7 px-md-5 px-2 front-text">
+      <h5>Hello, I'm Arpan</h5>
+      <h1>I create websites for your business, portfolio and a lot more.</h1>
+    </div>
+    <!-- Hero Section Image -->
+    <div class="col-md-5 text-end px-md-5 px-2">
+      <img src="images/Photo-5.jpg" alt="My photo" class="front-image rounded">
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Section 2 - About Section Start -->
+  <section class="d-md-flex bg-dark text-light p-md-5 p-2 pt-5">
+    <!-- About Section Heading -->
+    <div class="col-md-6 px-md-5 px-2 text-md-start text-center">
+      <h5 class="text-warning">About</h5>
+      <h1 class="heading">An inspiring headline about myself.</h1>
+      <a href="about.html" class="btn btn-lg btn-outline-light px-5 mt-5">More About Me</a>
+      <!-- Icons -->
+      <div class="d-flex mt-4 px-5 justify-content-md-start justify-content-center">
+        <i class="fa-brands fa-facebook mx-2 fs-3"></i>
+        <i class="fa-brands fa-twitter mx-2 fs-3"></i>
+        <i class="fa-brands fa-instagram mx-2 fs-3"></i>
+      </div>
+    </div>
+    <!-- About Section Description -->
+    <div class="col-md-6 px-md-5 pt-md-0 pt-5 px-2">
+      <p class="fs-5">I'm a web developer specializing in creating responsive, visually engaging, and user-centered
+        websites. Proficient in HTML, CSS, Bootstrap, Tailwind, JavaScript, PHP, and MySQL, I enjoy designing full-stack
+        solutions that blend functionality with aesthetics. Currently pursuing a B.Sc. (Hons.) in Computer Science at
+        Delhi University, I am actively exploring new frameworks and technologies to expand my skill set and deliver
+        innovative web solutions.</p>
+      <p class="fs-5">My recent projects include developing a multi-vendor e-commerce platform where I integrate backend
+        capabilities, secure data management, and real-time functionality. With each project, I aim to build seamless
+        digital experiences that leave a lasting impact, and I'm driven to continually improve through hands-on learning
+        and exploration in the field of web development.</p>
+    </div>
+  </section>
+  <!-- Section 2 - About Section End -->
+  
+  <!-- Section 3 - Services Section Start -->
+  <section class="d-md-flex p-5">
+    <!-- Services Section Heading -->
+    <div class="col-md-6 px-md-5 px-2 text-md-start text-center">
+      <h5 class="text-warning">Expertise</h5>
+      <h1 class="heading">My key areas of expertise.</h1>
+      <a href="services.html" class="btn btn-lg btn-outline-dark px-5 mt-5">View All Services</a>
+    </div>
+    
+    <!-- Services Section Description -->
+    <div class="col-md-6 px-md-5 px-2 text-md-start text-center">
+      <h3 class="mt-5">Website Development</h3>
+      <p class="mt-3">I create custom, responsive websites with a focus on user experience, from design to deployment.
+      </p>
+      <h3 class="mt-5">Website Hosting</h3>
+      <p class="mt-3">I offer secure and reliable hosting services to keep your website running smoothly, including
+        domain and server management.</p>
+      <h3 class="mt-5">Frontend Development</h3>
+      <p class="mt-3">With a focus on clean design and interactivity, I develop engaging, responsive interfaces using
+        HTML, CSS, JavaScript, Bootstrap, and Tailwind.</p>
+      <h3 class="mt-5">Backend Development</h3>
+      <p class="mt-3">My backend skills in PHP and MySQL ensure that your website functions reliably, supporting data
+        management and user authentication seamlessly.</p>
+    </div>
+  </section>
+  <!-- Section 3 - Services Section End -->
+
+  <!-- Footer Start -->
+  <footer class="bg-dark text-light p-md-5 p-2">
+    <div class="text-center p-md-5 py-5 p-2 lh-1 f-heading">Get started with a consultation today.</div>
+    <div class="px-md-5 px-2">
+      <p class="px-md-5 px-2 text-center fs-sm-5 fs-6">From website design to backend solutions, I create user-friendly, visually engaging websites tailored to your needs. Let's start with a consultation and discuss how we can achieve your goals together.</p>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <a href="contact.html" class="btn btn-warning btn-lg px-5 fs-6">LET'S WORK TOGETHER</a>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
