@@ -108,7 +108,7 @@ a {
 }
 
 .front-text h1, .front-text-home h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 /* Heading of each section */
@@ -208,6 +208,9 @@ footer p {
   .project-wrapper .project-carousel{
     grid-auto-columns: calc((100% / 2) - 9px);
   }
+  .front-text h1, .front-text-home h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -242,11 +245,14 @@ footer p {
   .project-wrapper .project-carousel{
     grid-auto-columns: 100%;
   }
+  .front-text h1, .front-text-home h1 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .front-text h1, .front-text-home h1{
-    font-size: 20px;
+    font-size: 18px;
   }
   .front-text-home h5 {
     font-size: 12px;
